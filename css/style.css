@@ -15,11 +15,6 @@
   font-family: Raleway, Arial, Helvetica, sans-serif;
   color: whitesmoke;
 }
-
-div {
-  border: 5px solid red;
-}
-
 nav {
   width: 65vw;
   height: 15vh;
@@ -31,14 +26,14 @@ nav ul li {
   display: inline-block;
 }
 nav ul a img {
-  width: 15vw;
-  height: 10vh;
+  width: 10vw;
+  height: 7.5vh;
   margin-right: 15vw;
 }
 ul:nth-child(n) :nth-child(n + 2):nth-child(-n + 7) {
   margin-right: 1rem;
   position: relative;
-  top: -2rem;
+  top: -1.75rem;
 }
 section {
   margin: 1rem 20vw 3rem 20vw;
@@ -62,5 +57,15 @@ div > img {
 }
 #text {
   position: relative;
-  top: -6rem;
+  top: -8rem;
+}
+div h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.links {
+  color: whitesmoke;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-decoration: none;
 }
