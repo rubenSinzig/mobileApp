@@ -13,13 +13,10 @@
   background-image: url("../img/bg_001.jpg");
   background-size: cover;
   font-family: Raleway, Arial, Helvetica, sans-serif;
+  color: whitesmoke;
 }
 
-div,
-h1,
-p,
-input,
-div img {
+div {
   border: 5px solid red;
 }
 
@@ -29,13 +26,19 @@ nav {
   margin: 2rem 20vw 3rem 20vw;
   padding: 6px;
 }
+
 nav ul li {
   display: inline-block;
 }
 nav ul a img {
   width: 15vw;
   height: 10vh;
-  margin-right: 19vw;
+  margin-right: 15vw;
+}
+ul:nth-child(n) :nth-child(n + 2):nth-child(-n + 7) {
+  margin-right: 1rem;
+  position: relative;
+  top: -2rem;
 }
 section {
   margin: 1rem 20vw 3rem 20vw;
@@ -47,4 +50,17 @@ section > div {
 div > img {
   width: 45%;
   height: 45%;
+}
+#white {
+  position: relative;
+  left: 6rem;
+}
+#black {
+  position: relative;
+  top: 1rem;
+  left: -10rem;
+}
+#text {
+  position: relative;
+  top: -6rem;
 }
