@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-VariableFont_wght.ttf"),
+    url("../fonts/Raleway-Italic-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background-image: url("../img/bg_001.jpg");
+  background-size: cover;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+div,
+h1,
+p,
+input,
+div img {
+  border: 5px solid red;
+}
+
+nav {
+  width: 65vw;
+  height: 15vh;
+  margin: 2rem 20vw 3rem 20vw;
+  padding: 6px;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul a img {
+  width: 15vw;
+  height: 10vh;
+  margin-right: 19vw;
+}
+section {
+  margin: 1rem 20vw 3rem 20vw;
+}
+section > div {
+  display: inline-block;
+  width: 28vw;
+}
+div > img {
+  width: 45%;
+  height: 45%;
+}
