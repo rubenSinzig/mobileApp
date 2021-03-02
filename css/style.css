@@ -19,8 +19,8 @@
 /* nav bar */
 .nav {
   display: grid;
-  grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  margin: 1em 8em;
+  grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 4em 20em;
 }
 nav ul li,
 nav ul li a {
@@ -28,17 +28,37 @@ nav ul li a {
   text-decoration: none;
   color: whitesmoke;
 }
+nav ul li a {
+  position: relative;
+  top: 1.5em;
+}
 .logo {
   width: 10em;
   height: auto;
+}
+/* I need the same space between (must be fixed) */
+ul:nth-child(n) :nth-child(n + 2):nth-child(-n + 7) {
+  text-align: center;
 }
 /* main content */
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 0 20em;
 }
 /* img phones */
 .iphone > img {
   width: 15em;
   height: auto;
+  float: right;
 }
+.black-phone {
+  position: absolute;
+  top: 13em;
+  right: 27em;
+}
+/*
+.main:nth-child(n) :nth-child(n) {
+  border: 2px solid black;
+}
+*/
