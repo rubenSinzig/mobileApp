@@ -17,13 +17,13 @@ body {
   background-image: url("../img/bg_001.jpg");
   background-size: cover;
 }
+/* Navigation Bar */
 nav {
   width: 65vw;
   height: 15vh;
   margin: 2rem 20vw 0 20vw;
   padding: 6px;
 }
-
 nav ul li {
   display: inline-block;
 }
@@ -37,6 +37,13 @@ ul:nth-child(n) :nth-child(n + 2):nth-child(-n + 7) {
   position: relative;
   top: -1.75rem;
 }
+.links {
+  color: whitesmoke;
+  font-size: 0.65rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* main content */
 section {
   margin: 0 20vw 3rem 20vw;
 }
@@ -44,6 +51,22 @@ section > div {
   display: inline-block;
   width: 28vw;
 }
+#text {
+  position: relative;
+  top: -6rem;
+  margin-right: 2rem;
+}
+div h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+section div p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+/* Images */
 div > img {
   width: 45%;
   height: 45%;
@@ -57,26 +80,7 @@ div > img {
   top: 1rem;
   left: -11.5rem;
 }
-#text {
-  position: relative;
-  top: -6rem;
-  margin-right: 2rem;
-}
-div h1 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-.links {
-  color: whitesmoke;
-  font-size: 0.65rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-section div p {
-  font-size: 0.8rem;
-  font-weight: bold;
-  margin-bottom: 3rem;
-}
+/* button */
 input {
   text-align: center;
   width: 9rem;
