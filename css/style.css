@@ -17,16 +17,20 @@
   background-attachment: fixed;
 }
 /* nav bar */
-.nav {
+.header {
   display: grid;
-  grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  margin: 4em 20em;
+  grid-template-columns: 1fr 1fr;
+  margin: 4em 22em;
+  gap: 5px;
+  border: 2px solid green;
 }
-nav ul li,
-nav ul li a {
+div nav ul {
   list-style: none;
+}
+div nav ul li a {
   text-decoration: none;
   color: whitesmoke;
+  border: 2px solid red;
 }
 nav ul li a {
   position: relative;
@@ -44,7 +48,7 @@ ul:nth-child(n) :nth-child(n + 2):nth-child(-n + 7) {
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0 20em;
+  margin: 0 22em;
 }
 /* img phones */
 .iphone > img {
