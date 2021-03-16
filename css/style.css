@@ -1,3 +1,30 @@
+@media only screen and (max-width: 1024px) {
+  .main-menu ul {
+    width: 55vw;
+    height: 50vh;
+    background-color: rgb(0, 116, 194);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: absolute;
+    top: 1rem;
+  }
+  .hamburger {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 2rem;
+    height: 2rem;
+  }
+  .hamburger div {
+    width: 2rem;
+    border: 1.5px solid white;
+    border-radius: 4px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+}
 @font-face {
   font-family: Raleway;
   src: url("../fonts/Raleway-VariableFont_wght.ttf"),
@@ -8,11 +35,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 16px;
-  color: whitesmoke;
+  color: white;
 }
 body {
   width: 100vw;
@@ -26,8 +52,7 @@ body {
   flex-direction: column;
 }
 section {
-  border: 2px dashed gold;
-  width: 70vw;
+  width: 55vw;
 }
 /* Navigation Bar */
 .menu-top {
@@ -37,7 +62,7 @@ section {
   justify-content: space-between;
 }
 .main-menu {
-  width: 35vw;
+  width: 28vw;
 }
 .logo img {
   width: 10vw;
@@ -50,31 +75,30 @@ section {
 }
 li a {
   text-decoration: none;
-  color: whitesmoke;
+  color: white;
   font-size: 0.8rem;
   font-weight: bold;
 }
 /* main content */
 .text,
 .iphone {
-  border: 2px dashed red;
   height: 70vh;
-  width: 34vw;
+  width: 27vw;
 }
 .content {
   height: 70vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .text {
+  width: 28vw;
   height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 h1 {
-  font-size: 2.75rem;
+  font-size: 2.4rem;
 }
 p {
   font-size: 0.9rem;
@@ -85,17 +109,14 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px dashed blue;
   text-align: center;
 }
-
-/* button */
 input {
-  width: 12vw;
-  height: 6vh;
+  width: 11rem;
+  height: 3rem;
   font-size: 1.15rem;
   font-weight: bold;
-  color: whitesmoke;
+  color: white;
   border: none;
   border-radius: 5px;
 }
@@ -107,5 +128,15 @@ input {
 }
 /* Images */
 div > img {
-  width: 14vw;
+  width: 15vw;
+}
+.black {
+  position: absolute;
+  top: 20%;
+  right: 31%;
+}
+.white {
+  position: absolute;
+  top: 18%;
+  right: 24%;
 }

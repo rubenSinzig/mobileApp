@@ -12,6 +12,11 @@
       <div class="logo">
         <a href="#"><img src="./img/logo_001.png" alt="Logo" /></a>
       </div>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <nav class="main-menu">
         <ul>
           <li><a href="#" class="links">PRODUCS</a></li>
@@ -34,7 +39,7 @@
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum enim
           facere porro nesciunt sint fugit quam culpa numquam dolores. Labore
           totam vel deleniti ad adipisci eum, iure animi error consequatur
-          voluptates fuga voluptatibus neque maxime.
+          voluptates fuga.
         </p>
         <div class="button">
           <input type="button" value="Learn More" class="More" />
@@ -54,5 +59,18 @@
         />
       </div>
     </section>
+    <script>
+      let clicked = false;
+      document.querySelector(".hamburger").addEventListener("click", () => {
+        clicked = !clicked;
+        console.log(clicked);
+        if (clicked) {
+          document.querySelector(".main-menu").style.cssText =
+            "display: block; position: absolute;z-index: 1;";
+        } else {
+          document.querySelector(".main-menu").style.cssText = "display: none;";
+        }
+      });
+    </script>
   </body>
 </html>
