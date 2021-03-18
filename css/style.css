@@ -150,4 +150,8 @@ input {
   .more {
     margin-right: 0.5rem;
   }
+  /* animation main-content mobil */
+  .hamburger div {
+    transition: 0.5s;
+  }
 }
